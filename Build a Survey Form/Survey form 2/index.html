@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Adjunct Faculty Schedule Request</h1>
+    <p id="description">Fill in details below to complete your request</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <br>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required> 
+        <br>
+        <label for="number" id="number-label">Number of classes you would like to teach</label>
+        <input type="number" name="number" id="number" placeholder="1" min="1" max="2" required>
+        <br>
+        <label for="dropdown" id="division">Select division</label>
+        <select id="dropdown">
+            <option value="CIS">Computer Information Systems</option>
+            <option value="BIT">Business Information Technology</option>
+        </select>
+        <br><br>
+        <label for="tod" id="tod">Time of Day</label>
+        <br>
+        <input type="radio" name="hour" id="tod" value="morning">
+        <label for="tod">Morning: 8a- 11:59a</label>
+        <br>
+        <input type="radio" name="hour" id="tod" value="afternoon">
+        <label for="tod">Afternoon: 12p - 4:59p</label>
+        <br>
+        <input type="radio" name="hour" id="tod" value="evening">
+        <label for="tod">Evening: 5p - 10p</label>
+        <br><br>
+        <label for="mode"><b>Mode</b></label>
+        <br>
+        <input type="checkbox" name="mode" id="checkbox" value="online">
+        <label for="checkbox">Online</label>
+        <br>
+        <input type="checkbox" name="mode" id="checkbox" value="ftf">
+        <label for="checkbox">In person / FTF (face to face)</label>
+        <br>
+        <input type="checkbox" name="mode" id="checkbox" value="hybrid">
+        <label for="checkbox">Hybrid</label>
+        <br>
+        <label for="textarea">Enter the Courses you are interested in teaching</label>
+        <br>
+        <textarea name="instructions" id="textarea" cols="40" rows="10"></textarea>
+        <br><br>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
